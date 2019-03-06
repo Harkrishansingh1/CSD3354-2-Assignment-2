@@ -25,7 +25,7 @@ namespace ConsoleApp2
     {
         int Method1(out int i)
         {
-        System.Console.WriteLine("Method1");
+        System.Console.WriteLine("Method1" + i);
             i=10;
             return 0;
         }
@@ -33,7 +33,7 @@ namespace ConsoleApp2
     public void Method3()
     {
         MyDelegate myDelegate = new MyDelegate(Method1);
-        MyDelegate myDelegate1 = new MyDelegate(Method1);
+        MyDelegate myDelegate1 = null;
         MyDelegate myDelegate2 = myDelegate + myDelegate1;
         int intValue;
         myDelegate2(out intValue);
