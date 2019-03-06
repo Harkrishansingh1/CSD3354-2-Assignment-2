@@ -11,11 +11,6 @@ namespace ConsoleApp2
 //Assignment 2
 // March 6,2019
 {
-    public delegate void MyDelegate();
-    public class DelegateExercises : MyDelegate
-    {
-
-    }
     public class program
     {
         public static void Main()
@@ -40,6 +35,7 @@ namespace ConsoleApp2
         {
             MyDelegate myDelegate = new MyDelegate(Method1);
             myDelegate();
+            System.Console.WriteLine(myDelegate.ToString());
         }
 
 
