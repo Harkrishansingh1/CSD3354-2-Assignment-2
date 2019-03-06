@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 //student Name -Harkrishan Singh Student ID C0732442
 //Studnt Name- Jatinder Singh student ID C0727454
-//CSD3354 Section 2
+//CSD3354 section 2
 //Assignment 2
 // March 6,2019
 {
