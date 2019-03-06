@@ -11,26 +11,35 @@ namespace ConsoleApp2
 //Assignment 2
 // March 6,2019
 {
-  
-    public delegate void MyDelegate();
-
-    public class DelegateExercises
+    using System;
+    delegate void ExampleDelegate(String xyz);
+    class program
     {
-
-
-       
-        public void Method3()
+        public static void Method1(string xyz)
         {
-         
-            System.Console.WriteLine(MyDelegate.ToString());
+            Console.WriteLine(xyz + "Method1");
         }
-
-
-
-
-
-
+        public static void Method2(string xyz)
+        {
+            Console.WriteLine(xyz + "Method2");
+        }
+        public static void Main()
+        {
+            ex1Delegate = new ExampleDelegate(Method1);
+            ex1Delegate = new ExampleDelegate(Method2);
+            ex3Delegate = ex1Delegate + ex2Delegate;
+            myDelegate = ex1Delegate + ex2Delegate;
+            ex1Delegate("aaa");
+            ex2Delegate("bbb");
+            ex3Delegate("ccc");
+            myDelegate = ex1Delegate - ex2Delegate;
+            myDelegate("eee");
+            myDelegate = ex1Delegate - ex2Delegate
+            myDelegate("fff");
+            Console.ReadLine();
+        }
     }
+   
 
 }
 
