@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
+    class program
+    {
+        static void Main(string[] args)
+        {
+            DelegateExercises a = new DelegateExercises();
+            a.Method2();
+        }
+
+    }
 
     public class DelegateExercises
     {
@@ -23,13 +32,14 @@ namespace ConsoleApp2
         public void Method2()
         {
             MyDelegate mydelegate = new MyDelegate(Method1);
-            mydelegate();
+            mydelegate(50);
         }
 
 
     }
 
 }
+
 
 
 
