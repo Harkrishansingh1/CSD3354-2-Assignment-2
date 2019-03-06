@@ -5,16 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp2
-{ 
-    public class assignment
-    {
-        static void Main()
-        {
-            DelegateExercises a = new DelegateExercises();
-            a.Method2();
-        }
+{
 
-    }
     public class DelegateExercises
     {
         //student Name -Harkrishan Singh Student ID C0732442
@@ -37,9 +29,10 @@ namespace ConsoleApp2
 
     }
 
-
-
-
-
-
 }
+
+
+
+
+
+
