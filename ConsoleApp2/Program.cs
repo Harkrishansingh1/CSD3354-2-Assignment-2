@@ -5,17 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp2
-{
-    class Program
+{ 
+    public class assignment
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            //student Name -Harkrishan Singh Student ID C0732442
-            //Studnt Name- Jatinder Singh student ID C0727454
-            //CSD3354 Section 2
-            //Assignment 2
-            // March 6,2019
-
+            DelegateExercises a = new DelegateExercises();
+            a.Method2();
         }
+
     }
+    public class DelegateExercises
+    {
+        //student Name -Harkrishan Singh Student ID C0732442
+        //Studnt Name- Jatinder Singh student ID C0727454
+        //CSD3354 Section 2
+        //Assignment 2
+        // March 6,2019
+        public delegate void MyDelegate();
+        void Method1()
+        {
+            Console.WriteLine("Method1");
+            Console.ReadLine();
+        }
+        public void Method2()
+        {
+            MyDelegate mydelegate = new MyDelegate(Method1);
+            mydelegate();
+        }
+
+
+    }
+
+
+
+
+
+
 }
