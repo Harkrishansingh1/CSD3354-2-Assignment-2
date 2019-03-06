@@ -25,6 +25,8 @@ namespace ConsoleApp2
         }
         public static void Main()
         {
+            ExampleDelegate ex1Delegate,ex2Delegate,ex3Delegate, myDelegate;
+
             ex1Delegate = new ExampleDelegate(Method1);
             ex1Delegate = new ExampleDelegate(Method2);
             ex3Delegate = ex1Delegate + ex2Delegate;
