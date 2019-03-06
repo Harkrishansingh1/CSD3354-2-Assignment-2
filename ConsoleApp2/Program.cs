@@ -11,7 +11,8 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             DelegateExercises a = new DelegateExercises();
-            a.Method2();
+            a.Method3();
+            Console.ReadLine();
         }
 
     }
@@ -23,16 +24,24 @@ namespace ConsoleApp2
         //CSD3354 Section 2
         //Assignment 2
         // March 6,2019
-        public delegate void MyDelegate();
-        void Method1(int i)
+        public delegate int MyDelegate(int intValue);
+        public int Method1(int intMethod1)
         {
-            Console.WriteLine("Method1");
-            Console.ReadLine();
+            return intMethod1 * 2;
+        }     
+        public int Method2(int intMethod2)
+        {
+            return intMethod2 * 10;
         }
-        public void Method2()
+        public void Method3()
         {
             MyDelegate mydelegate = new MyDelegate(Method1);
-            mydelegate();
+            int result1 = mydelegate(10);
+            System.Console.WriteLine(result1);
+            mydelegate = new MyDelegate(Method2);
+            int result2 = mydelegate(10);
+            System.Console.WriteLine(result2);
+            
         }
 
 
