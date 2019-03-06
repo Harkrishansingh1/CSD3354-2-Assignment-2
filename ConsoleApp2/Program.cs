@@ -24,7 +24,7 @@ namespace ConsoleApp2
         //Assignment 2
         // March 6,2019
         public delegate void MyDelegate();
-        void Method1()
+        void Method1(int i)
         {
             Console.WriteLine("Method1");
             Console.ReadLine();
@@ -32,7 +32,7 @@ namespace ConsoleApp2
         public void Method2()
         {
             MyDelegate mydelegate = new MyDelegate(Method1);
-            mydelegate(50);
+            mydelegate();
         }
 
 
